@@ -1,0 +1,9 @@
+@mixin border() {
+	border-radius: 10px;
+ 	border: 1px solid salmon;
+}
+
+@mixin flex() {
+	display: flex;
+  align-items: center;
+}

@@ -1,0 +1,58 @@
+.banner-result {
+  @include flex();
+  margin-top: -50px;
+  flex-direction: column;
+  &__view {
+    @include flex();    
+    background: moccasin;
+    justify-content:center;
+    border: 1px dashed black;
+    border-radius: 20px;
+    width: 900px;
+    height: 900px;
+  }
+  &__final {
+    width: 141px;
+    height: 188px;
+    display:block;
+    position: relative;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+  }
+  &__text {
+    position: absolute;
+    bottom: 10%;
+    font-size: 33px;
+    margin-left: 38px;
+    margin-right: 38px;
+    line-height: 42px;
+  }
+  &__subtitle {
+    margin-top: 4%;
+    text-decoration: none;
+    font-size: 23px;
+    line-height: 29px;
+    font-weight: 300;
+  }
+  &__saver {
+    text-align: center;
+    color: red;
+  }
+  &__buttons {
+    @include flex();
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+  }
+  input {
+    margin: 10px 0;
+    width: 500px;
+    text-align: center;
+  }
+  button {
+    margin-top: 10px;
+    height: 80px;
+    width: 160px;
+  }
+}

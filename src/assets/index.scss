@@ -1,0 +1,93 @@
+@import 'reset-styles.scss';
+@import 'mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import '/configurator-background/configurator-background.scss';
+@import '/configurator-size/configurator-size.scss';
+@import '/configurator-words/configurator-words.scss';
+@import '/banner-result/banner-result.scss';
+
+body {
+  color: black;
+  width: 100%;
+  min-width: 920px;
+  padding: 50px 10%;
+  background-color: lightsalmon;
+  font-family: 'Comfortaa';
+  h2 {
+    font-size: 25px;
+  }
+}
+
+h1 {
+  color: black;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+input {
+  @include border();
+  background-color: skyblue;
+}
+
+button {
+  @include border();
+  border: 0px;
+  background-color: skyblue;
+  width: 120px;
+  height: 35px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+.container {
+  @include flex();
+  padding: 20px 0;
+  background-color: moccasin;
+  flex-direction: column;
+  border-radius: 30px;
+  h1 {
+    font-size: 40px;
+  }
+}
+
+.configurator-wrapper-second {
+  display: flex;
+  flex-direction: row;
+  min-width: 900px;
+  margin-top: -30px;
+  justify-content: space-between;
+}
+
+.avito-magic-button {
+  @include flex();
+  border: 1px dashed black;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  flex-direction: column;
+  width: 160px;
+  text-align: center;
+  margin-top: 230px;
+  font-size: 12px;
+  cursor: pointer;
+  img {
+    width: 80px;
+    margin-bottom: 4px;   
+  }
+}
+
+.modal {
+  max-width: 600px;
+  max-height: 300px;
+  margin: 100px auto;
+  overflow-y: auto;
+  background: #fff;
+}

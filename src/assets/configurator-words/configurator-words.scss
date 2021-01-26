@@ -1,0 +1,23 @@
+.configurator-words {
+  text-align: center;
+	width: 320px;
+  &__header &__text {
+    @include flex();
+    flex-direction: column;
+  }
+  &__header {
+    margin-top: -15px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  input, button {
+    margin-top: 15px;
+  }
+  input {
+    text-align: center;
+  }
+}
+
+
