@@ -34,7 +34,6 @@ input {
 
 button {
   @include border();
-  border: 0px;
   background-color: skyblue;
   width: 120px;
   height: 35px;
