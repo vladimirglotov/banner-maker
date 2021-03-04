@@ -17,3 +17,5 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+Самое первое и самое топорное учебное приложенеие на Vue. Все никак не дойдут руки дорефакторить
